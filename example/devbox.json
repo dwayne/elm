@@ -1,5 +1,5 @@
 {
   "packages": [
-    "git+ssh://git@github.com/dwayne/elm?rev=b621b22ed65097eace8377708eb650ee781359e5"
+    "git+ssh://git@github.com/dwayne/elm?rev=a7536ab6407f343efec1ab6473d24bd02df323ad"
   ]
 }
