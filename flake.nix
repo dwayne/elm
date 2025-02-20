@@ -5,7 +5,7 @@
     flake-utils.lib.eachDefaultSystem(system:
       let
         pkgs = import nixpkgs { inherit system; };
-        elm = import ./elm.nix { stdenv = pkgs.stdenv; };
+        elm = import ./elm.nix { elmPackages = pkgs.elmPackages; lib =pkgs.lib; makeWrapper = pkgs.makeWrapper; stdenv = pkgs.stdenv; };
       in
       {
         packages.default = elm;
