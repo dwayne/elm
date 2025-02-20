@@ -1,5 +1,5 @@
 {
-  description = "Experimental improvements to the Elm command-line application.";
+  description = "It provides a wrapper script to unify all the Elm tools I use in my projects.";
 
   outputs = { self, flake-utils, nixpkgs }:
     flake-utils.lib.eachDefaultSystem(system:
@@ -9,6 +9,7 @@
       in
       {
         packages.default = elm;
+        apps.default = flake-utils.lib.mkApp { drv = elm; };
       }
     );
 }
