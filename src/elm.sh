@@ -17,6 +17,10 @@ case "$subcommand" in
     elm-format "$@"
     ;;
 
+  json)
+    elm-json "$@"
+    ;;
+
   optimize)
     elm-optimize-level-2 "$@"
     ;;

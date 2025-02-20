@@ -29,6 +29,7 @@ stdenv.mkDerivation {
         elm
         elm-doc-preview
         elm-format
+        elm-json
         elm-optimize-level-2
         elm-review
         elm-test
