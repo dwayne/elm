@@ -26,6 +26,7 @@ stdenv.mkDerivation {
   postFixup = ''
     wrapProgram $out/bin/elm \
       --set PATH ${lib.makeBinPath [
+        elmPackages.elm
         elmPackages.elm-test
       ]}
   '';
