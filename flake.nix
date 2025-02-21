@@ -1,5 +1,5 @@
 {
-  description = "It provides a wrapper script to unify all the Elm tools I use in my projects.";
+  description = "A package and application that unifies multiple Elm tools.";
 
   outputs = { self, flake-utils, nixpkgs }:
     flake-utils.lib.eachDefaultSystem(system:
